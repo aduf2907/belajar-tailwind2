@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ayok Belajar TailwindCSS</h1>
+
+    <section class="mb-10">
+      <h2>Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="py-3">Padding</div>
+    </section>
+
+    <section class="mb-10">
+      <h2>Sizing</h2>
+      <div class="w-16">Kotak 1</div>
+    </section>
+  </body>
+</html>
