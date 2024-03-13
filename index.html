@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Belajar Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,15 +18,18 @@
             spacing: {
               13: "3.25rem",
             },
+            fontFamily: {
+              inter: ["Inter"],
+            },
           },
         },
       };
     </script>
-    <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
       * {
         border: 1px solid red;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <h1>Ayok Belajar TailwindCSS</h1>
@@ -34,6 +43,29 @@
     <section class="mb-10">
       <h2>Sizing</h2>
       <div class="w-16 h-16">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">
+        Belajar Mengenai Typography pada TailwindCSS
+      </h2>
+      <div class="mb-4 text-lg">By dup, 13 Maret 2024</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet
+        <a href="#" class="underline font-semibold">consectetur</a>, adipisicing
+        elit. Dolore minima laborum voluptatum libero suscipit dolorum deserunt
+        natus. Ducimus, sapiente dolor?
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+        tempora."
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        repellendus impedit ad dignissimos quibusdam deserunt accusamus id magni
+        expedita odit debitis, earum aut beatae inventore consectetur minima
+        dolor, consequatur nulla.
+      </p>
     </section>
   </body>
 </html>
